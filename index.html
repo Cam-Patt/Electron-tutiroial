@@ -1,0 +1,55 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+    <title>Hello World!</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <form class="row g-3" style ="margin: auto;">
+      <div class="col-md-6">
+        <label for="Title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="Title">
+      </div>
+      <div class="col-md-6">
+        <label for="Catagory" class="form-label">Category</label>
+        <input type="text" class="form-control" id="Category" placeholder="Homework">
+      </div>
+      <div class="col-md-6">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control" id="description">
+      </div>
+        <label class="input-group-text" for="Month">Month: </label>
+          <select class="form-select" id="Month">
+            <option value="1">January</option>
+            <option value="2">Feburary</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <label class="input-group-text" for="Day">Day: </label>
+          <select class="form-select" id="Day">
+            </select>
+            <label class="input-group-text" for="Year">Year: </label>
+            <select class="form-select" id="Year">
+            </select>
+    </form>
+  <button id = "add">Add to To-Do list</button>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
